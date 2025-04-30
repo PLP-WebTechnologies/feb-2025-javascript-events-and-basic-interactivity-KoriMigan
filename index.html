@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive JavaScript Playground</h1>
+        <p>Press any key to see it detected below!</p>
+        <div id="key-display">Press a key</div>
+    </header>
+
+    <main>
+        <!-- Event Handling Section -->
+        <section class="card" id="event-handling">
+            <h2>Event Handling 🎈</h2>
+            
+            <div class="demo-box">
+                <h3>Button Click Events</h3>
+                <button id="color-change-btn">Change My Color!</button>
+                <button id="text-change-btn">Change My Text!</button>
+                <button id="secret-btn">Double-Click Me!</button>
+            </div>
+            
+            <div class="demo-box">
+                <h3>Hover Effects</h3>
+                <div class="hover-box">Hover over me!</div>
+            </div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section class="card" id="interactive-elements">
+            <h2>Interactive Elements 🎮</h2>
+            
+            <!-- Image Gallery -->
+            <div class="demo-box">
+                <h3>Image Gallery</h3>
+                <div class="gallery-container">
+                    <div class="gallery-main">
+                        <img id="main-image" src="./assets/pexels-pixabay-277124.jpg" alt="Main gallery image">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <img class="thumb" src="./assets/pexels-cottonbro-5052877.jpg" alt="Thumbnail 1" data-title="Image 1">
+                        <img class="thumb" src="./assets/pexels-cottonbro-5081969.jpg" alt="Thumbnail 2" data-title="Image 2">
+                        <img class="thumb" src="./assets/pexels-eugeniofr-31746103.jpg" alt="Thumbnail 3" data-title="Image 3">
+                        <img class="thumb" src="./assets/pexels-eva-bronzini-5941506.jpg" alt="Thumbnail 4" data-title="Image 4">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tabs -->
+            <div class="demo-box">
+                <h3>Content Tabs</h3>
+                <div class="tabs-container">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="tab1">JavaScript Events</button>
+                        <button class="tab-btn" data-tab="tab2">DOM Manipulation</button>
+                        <button class="tab-btn" data-tab="tab3">Form Validation</button>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab1" class="tab-pane active">
+                            <h4>JavaScript Events</h4>
+                            <p>Events are actions or occurrences that happen in the browser which the JavaScript can detect and respond to. Common events include:</p>
+                            <ul>
+                                <li><strong>Mouse events:</strong> click, dblclick, mouseenter, mouseleave</li>
+                                <li><strong>Keyboard events:</strong> keydown, keyup, keypress</li>
+                                <li><strong>Form events:</strong> submit, change, focus, blur</li>
+                                <li><strong>Document/Window events:</strong> load, resize, scroll, unload</li>
+                            </ul>
+                            <p>Event listeners are used to "listen" for when these events happen and execute code in response.</p>
+                        </div>
+                        <div id="tab2" class="tab-pane">
+                            <h4>DOM Manipulation</h4>
+                            <p>The Document Object Model (DOM) represents the structure of HTML documents as a tree of objects. JavaScript can:</p>
+                            <ul>
+                                <li>Select elements using methods like <code>getElementById</code>, <code>querySelector</code></li>
+                                <li>Change element content with <code>innerHTML</code> or <code>textContent</code></li>
+                                <li>Modify attributes using <code>setAttribute</code> and <code>getAttribute</code></li>
+                                <li>Change styles with the <code>style</code> property</li>
+                                <li>Add/remove classes with <code>classList</code> methods</li>
+                                <li>Create, append and remove elements dynamically</li>
+                            </ul>
+                        </div>
+                        <div id="tab3" class="tab-pane">
+                            <h4>Form Validation</h4>
+                            <p>Client-side form validation ensures data is in the correct format before submitting to a server. Key techniques include:</p>
+                            <ul>
+                                <li><strong>Required fields:</strong> Ensuring fields aren't left empty</li>
+                                <li><strong>Data format:</strong> Checking email addresses, phone numbers, etc.</li>
+                                <li><strong>Data range:</strong> Verifying values fall within expected ranges</li>
+                                <li><strong>Real-time validation:</strong> Providing immediate feedback as users type</li>
+                                <li><strong>Custom validation:</strong> Creating specific rules for your application</li>
+                            </ul>
+                            <p>While client-side validation improves user experience, server-side validation is still necessary for security.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Accordion -->
+            <div class="demo-box">
+                <h3>Accordion</h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">Project Overview</div>
+                        <div class="accordion-content">
+                            <p>This interactive web application demonstrates various JavaScript techniques including:</p>
+                            <ul>
+                                <li>Event handling with different types of user interactions</li>
+                                <li>Interactive UI elements that respond to user actions</li>
+                                <li>Form validation with real-time feedback</li>
+                                <li>DOM manipulation to create dynamic content</li>
+                            </ul>
+                            <p>The project uses vanilla JavaScript without any frameworks to showcase fundamental web development skills.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Technologies Used</div>
+                        <div class="accordion-content">
+                            <h4>HTML5</h4>
+                            <p>Provides the structural foundation with semantic elements for better accessibility and SEO.</p>
+                            
+                            <h4>CSS3</h4>
+                            <p>Handles styling with modern techniques including:</p>
+                            <ul>
+                                <li>CSS variables for consistent theming</li>
+                                <li>Flexbox for responsive layouts</li>
+                                <li>Transitions and animations for interactive effects</li>
+                                <li>Media queries for responsive design</li>
+                            </ul>
+                            
+                            <h4>JavaScript</h4>
+                            <p>Powers all interactivity including event handling, DOM manipulation, and form validation.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Future Enhancements</div>
+                        <div class="accordion-content">
+                            <p>Possible improvements and additions to this project could include:</p>
+                            <ul>
+                                <li><strong>Local Storage:</strong> Save form data and user preferences</li>
+                                <li><strong>Drag and Drop:</strong> Add drag functionality to the gallery</li>
+                                <li><strong>Animations:</strong> More sophisticated transitions and effects</li>
+                                <li><strong>Accessibility:</strong> Enhanced keyboard navigation and screen reader support</li>
+                                <li><strong>API Integration:</strong> Fetch data from external sources</li>
+                            </ul>
+                            <p>These enhancements would demonstrate more advanced JavaScript techniques while improving user experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section class="card" id="form-validation">
+            <h2>Form Validation 📋✅</h2>
+            <div class="demo-box">
+                <form id="validation-form">
+                    <div class="form-group">
+                        <label for="username">Username (Required)</label>
+                        <input type="text" id="username" placeholder="Enter username">
+                        <span class="error-message" id="username-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter email">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter password">
+                        <span class="error-message" id="password-error"></span>
+                        <div class="password-strength">
+                            <div class="strength-bar"></div>
+                            <span class="strength-text">Password strength</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm password">
+                        <span class="error-message" id="confirm-password-error"></span>
+                    </div>
+
+                    <button type="submit" id="submit-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fiona Wangui JavaScript Event Handling & Interactive Elements Assignment. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
